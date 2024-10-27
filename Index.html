@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title style="font-size: xx-large;">Animeland</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon"
+        href="data:image/png;base64,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">
+</head>
+
+<body>
+
+    <div class="top-bar">
+
+        <nav class="d-flex justify-between">
+            <div class="bold">Animeland</div>
+            <ul class="d-flex justify-between">
+                <li>Home</li>
+                <li>Latest</li>
+                <li>About</li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <div class="content">
+        <div>
+            <img src="https://i.pinimg.com/564x/69/5c/ce/695cce2894d9bb3331a684ab513419f2.jpg" alt="image" />
+        </div>
+        <div><a href="@" class="category-link">Illustration</a>
+            <h1>Three Sword Style,Roronoa Zoro</h1>
+            <p><strong>Three Sword Style </strong>is a unique style of triple wielding swordsmanship where the
+                practitioner wields three
+                katanas; one in each hand and the third in the mouth. There are many different techniques for this sword
+                style, including direct hit attacks <em>(Oni Giri)</em> and compressed air projectile attacks <em>(Hyaku
+                    Hachi Pound
+                    Ho)</em>.
+                Roronoa Zoro is the world-famous swordsman of the Straw Hat Pirates who created this style; using his
+                original Two Sword Style as the basis of most of Three Sword Style techniques, which also incorporates
+                dual
+                wielding.
+
+                During the Thriller Bark Arc, Jigoro, the zombie given Zoro's shadow was also capable of this sword
+                style
+                due to Gecko Moria's Kage Kage no Mi's powers.
+
+                During the From the Decks of the World: The 500,000,000 Man Arc, in Shimotsuki Village at the Isshin
+                Dojo
+                where Zoro trained as a boy, Koushirou's young students are shown imitating Zoro and as a result have
+                begun
+                practicing Three Sword Style in an effort to emulate him.</p>
+
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+
+    </div>
+    <div class="layout image ">
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/8a/d9/f8/8ad9f8400a8bf8221aee075cd38bffa1.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>"Black Leg" Sanji,born as Vinsmoke Sanji, is the cook of the Straw Hat Pirates and one of the Senior
+                Officers of the Straw Hat Grand Fleet."Black" comes from his Black Suit. "Leg" comes from his fighting
+                style.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/62/97/bc/6297bc721006f1518349b927f4162d49.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>"God" Usopp is the sniper of the Straw Hat Pirates and one of the Senior Officers of the Straw Hat Grand
+                Fleet. He is the fourth member of the crew and the third to joined at the end of the Syrup Village Arc.
+            </p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/736x/02/bc/1d/02bc1ddfb478c7069ac1db5017955648.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>Monkey D. Luffy,or Strawhat luffy is the founder, captain, and strongest combatant of the increasingly
+                infamous and powerful Straw Hat Pirates in order to become the new Pirate King </p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/09/bb/60/09bb60cc0f7c254d715fab4f2a6496fd.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>"Cat Burglar" Nami is the navigator of the Straw Hat Pirates and one of the Senior Officers of the Straw
+                Hat Grand Fleet. She is the third member of the crew and the second to join, doing so during the Orange
+                Town Arc.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/64/9a/b6/649ab6d1519a97b1d4cdbc4241572345.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>"Soul King" Brook is the musician of the Straw Hat Pirates, one of their two swordsmen, and one of the
+                Senior Officers of the Straw Hat Grand Fleet.defend strikes from a steroid enhanced Zeo and Sheepshead
+                of the Beasts Pirates.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/88/75/d2/8875d2afe14f4076e34f479ec1a1524e.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>Nico Robin, also known by her epithet "Devil Child" and the "Light of the Revolution", is the
+                archaeologist of the Straw Hat Pirates and one of the Senior Officers of the Straw Hat Grand Fleet.
+                Robin cannot swim and becomes immobilized.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/736x/36/41/8c/36418ca4c30f3c4e1d287a4bbf22a622.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>Tony Tony Chopper, also known as "Cotton Candy Lover" Chopper is the doctor of the Straw Hat Pirates and
+                one of the Senior Officers of the Straw Hat Grand Fleet.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/736x/fb/00/4e/fb004e836439f20413d4ad3b38b2ca62.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>"Knight of the Sea" Jinbe is the helmsman of the Straw Hat Pirates and one of the Senior Officers of the
+                Straw Hat Grand Fleet.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+    </div>
+
+    <div class="line-seperator"></div>
+    <h><a href="@" class="category-link ">Latest Posts</a></h>
+    <div class="layout">
+
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/736x/1b/b8/a2/1bb8a27ef16a875dbe4df45e97921d36.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>Garp reveals his power in Episode 1114 with Galaxy Impact.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/736x/7d/33/f2/7d33f2e1c2c6d5963472560e810888ad.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>Luffy and Gol D. Roger are related, in more ways than one. Luffy carries the will of Shanks in the form
+                of the Straw Hat.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/c7/95/7f/c7957f4f13b26960c92ff9f6e60999ec.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>The reason he died is because he had about 400 wounds and was old and sick already And Powerwise Admirals
+                are super close to Yonkos.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/736x/fe/bc/60/febc6074119bea04f513894ba7e3a4e9.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>One Piece Manga and Anime — Vol. 79 Chapter 795 (p. 16-17) and Episode 739, Kaidou makes his debut. ↑ One
+                Piece Anime — Episode 736, Kaidou is seen shadowed.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/57/39/bb/5739bb2f239cc2baa9724366719437be.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>the Soru Soru no Mi gives Big Mom the power to extract and manipulate the souls of anyone she chooses.
+            </p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/736x/7e/e3/71/7ee3718392425f5106b9a4eb4f6f4d10.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>Kuma lost both his face and his leg was melt but only to use his Devil Fruit to teleport once again,
+                escaping from Akainu.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/79/d0/18/79d0187512e039063cd7c5ebc3f37cec.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>Shanks has been waiting this entire time for Joy Boy to emerge, because he knows that's the only way he
+                can get the One Piece.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/10/42/99/10429931155dc329aa6498aa5b7b6230.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>"There can be no hapiness in a world where the undesirabes are thrown away." - Monkey.D.Dragon </p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+    </div>
+
+    <div><input type="button" class="button" value="View all Latest Posts">
+    </div>
+    <div class="line-seperator"></div>
+    <h><a href="@" class="category-link ">Featured Posts</a></h>
+    <div class="layout img">
+
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/c1/b9/29/c1b929d85d39620d528281dc1a9318f3.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>Garp reveals his power in Episode 1114 with Galaxy Impact.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/bc/01/88/bc01885f65c13bfafd7804d294600377.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>Luffy and Gol D. Roger are related, in more ways than one. Luffy carries the will of Shanks in the form
+                of the Straw Hat.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/93/53/aa/9353aac9640e6239360376c82a8d4a41.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>The reason he died is because he had about 400 wounds and was old and sick already And Powerwise Admirals
+                are super close to Yonkos.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/736x/ed/e5/bf/ede5bf3ec60a1b4b5686e79ff81fa974.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>One Piece Manga and Anime — Vol. 79 Chapter 795 (p. 16-17) and Episode 739, Kaidou makes his debut. ↑ One
+                Piece Anime — Episode 736, Kaidou is seen shadowed.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/736x/42/54/f1/4254f1b775ee8f1804e1ff6904b7588c.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>the Soru Soru no Mi gives Big Mom the power to extract and manipulate the souls of anyone she chooses.
+            </p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/6b/59/b0/6b59b08bebc3982202c6815ce2a3253d.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>Kuma lost both his face and his leg was melt but only to use his Devil Fruit to teleport once again,
+                escaping from Akainu.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/b2/8a/0e/b28a0ec61baf6cbf539082a98fb3ae92.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>Shanks has been waiting this entire time for Joy Boy to emerge, because he knows that's the only way he
+                can get the One Piece.</p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://i.pinimg.com/564x/83/d5/95/83d595956b11b16788882945c070ea6a.jpg" alt="img">
+            </div>
+            <div><a href="@" class="category-link">Explore Now</a></div>
+            <p>"There can be no hapiness in a world where the undesirabes are thrown away." - Monkey.D.Dragon </p>
+            <a href="$" class="color">By&nbsp;</a>
+            <a href="#" class="color">Ichira Oda</a>
+        </div>
+    </div>
+</body>
+
+</html>
